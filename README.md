@@ -4,7 +4,10 @@ A VirtualBox Appliance for cross-platform FreePascal/Lazarus development
 Quickly and easily get going with Lazarus and FPC, already set up with useful packages and ready for cross-compilation.
 
 ## Installing
-Open your VirtualBox
+* Open VirtualBox
+* File menu -> Import Appliance
+* Select the .ova file and follow the instructions
+* Enjoy your shiny new VM
 
 ## User
 The username is "developer" and the default password is "fpc".
