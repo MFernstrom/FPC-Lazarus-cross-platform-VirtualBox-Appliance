@@ -1,17 +1,17 @@
 # FPC/Lazarus cross-platform VirtualBox Appliance
 A VirtualBox Appliance for cross-platform FreePascal/Lazarus development
 
-Quickly and easily get going with Lazarus and FPC, already set up with useful packages and ready for cross-compilation.
+This VirtualBox Appliance is already set up with FreePascal, Lazarus, several cross-compilers, useful packages, and VirtualBox Guest Additions.
 
 ## Installing
-* Download and unzip the release
+* Download and unzip the release from here http://www.mediafire.com/file/v8y6vlyelgd1s46/Lubuntu_FreePascal_and_Lazarus.ova/file
 * Open VirtualBox
 * File menu -> Import Appliance
 * Select the .ova file and follow the instructions
 * Enjoy your shiny new VM
 
 ## User
-The username is "developer" and the default password is "fpc".
+Username is "developer" and the password is "fpc".
 
 You should change the password after adding the virtual machine.
 
@@ -36,6 +36,38 @@ You should change the password after adding the virtual machine.
 * xmailer (Email)
 * OPM (Online Package Manager)
 * anchordockingdsgn 1.0 (Single Lazarus window)
+
+## How to set up your own project for cross-compilation
+
+### Create a new build mode
+* Open `Project` -> `Project Options` in the top menu
+* Click on `Compiler Options` in the left-hand list
+* Click on the button with the three dots at the top, next to "Build modes"
+* Double click on the name of the build mode to edit it
+* Change it to `Linux`
+* Click the `+` sign on the left in the new window
+* Edit the new modes name and make it Windows
+* Click on the `OK` button
+
+### Change compilation target for the build mode
+* In your `Project Options` click on `Compiler Options` in the left-hand list
+* Pick the `Build Mode` to edit from the dropdown at the top
+* Click on `Config and Target` in the left-hand menu
+* Change the `Target OS` to fit your target, such as `Win64` for 64-bit Windows, or `Linux`
+* Change the `Target CPU` Family to fit your target, such as `x86_64` for 64-bit systems
+* Click OK at the bottom
+
+### Setting Project Path
+* Click on Paths in the left-hand menu
+* Change the Target file name to something like `bin/$(TargetOS)/myapp` this will create a folder for the specific OS when compiling
+
+### Compiling for a specific target
+On the Lazarus IDE coolbar menu, there's an icon that loos like cog with a wrench, it has a dropdown arrow.
+* Click on the dropdown arrow to pick any of your `Build Modes`
+* Use `Run` -> `Build` or `Run` -> `Compile` as you usually do
+
+## About the Appliance
+The base image is a Lubuntu install, which is a light-weight Ubuntu distro. It was set up using VirtualBox 6.1.16r
 
 ## Tested
 I created a Lazarus project and added a button which shows some text when clicked.
