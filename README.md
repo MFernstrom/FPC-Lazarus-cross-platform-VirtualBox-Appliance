@@ -4,6 +4,7 @@ A VirtualBox Appliance for cross-platform FreePascal/Lazarus development
 Quickly and easily get going with Lazarus and FPC, already set up with useful packages and ready for cross-compilation.
 
 ## Installing
+* Download and unzip the release
 * Open VirtualBox
 * File menu -> Import Appliance
 * Select the .ova file and follow the instructions
