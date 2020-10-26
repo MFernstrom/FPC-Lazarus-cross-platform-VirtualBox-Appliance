@@ -4,14 +4,14 @@ A VirtualBox Appliance for cross-platform FreePascal/Lazarus development
 This VirtualBox Appliance is already set up with FreePascal, Lazarus, several cross-compilers, useful packages, and VirtualBox Guest Additions.
 
 ## Installing
-* Download and unzip the release from here http://www.mediafire.com/file/v8y6vlyelgd1s46/Lubuntu_FreePascal_and_Lazarus.ova/file (I created and uploaded it there, as it's too large for GitHub at around 4.5gb in size)
+* Download the OVA file here: http://www.mediafire.com/file/v8y6vlyelgd1s46/Lubuntu_FreePascal_and_Lazarus.ova/file (I uploaded it on Mediafire as it's too large for GitHub at 4.5gb)
 * Open VirtualBox
-* File menu -> Import Appliance
+* `File` menu -> `Import Appliance`
 * Select the .ova file and follow the instructions
 * Enjoy your shiny new VM
 
 ## User
-Username is "developer" and the password is "fpc".
+Username is `developer` and the password is `fpc`
 
 You should change the password after adding the virtual machine.
 
